@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIOS ACADEMIA | CORPO E MOVIMENTO</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando Fontes Futuristas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="cyber-body">
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo glitch-text" data-text="INDIOS">INDIOS <span class="logo-highlight">ACADEMIA</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-item">Início</a></li>
+                    <li><a href="#about" class="nav-item">Sobre</a></li>
+                    <li><a href="#schedule" class="nav-item">Aulas</a></li>
+                    <li><a href="#plans" class="nav-item">Planos</a></li>
+                    <li><a href="#" onclick="openAdminModal()" class="admin-link nav-item">ADMIN ACCESS</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <!-- Particles Background Canvas (Optional simulated via CSS) -->
+        <div class="grid-bg"></div>
+        
+        <div class="container hero-content fade-in-section">
+            <h1 class="main-title">Transforme seu Corpo,<br> <span class="neon-text">Mude sua Vida</span></h1>
+            <p class="lead-text">Aqui o diferencial é você! Ambiente motivador, profissionais qualificados e a energia de uma verdadeira academia de bairro.</p>
+            <div class="cta-group">
+                <a href="#plans" class="btn btn-neon">PLANOS</a>
+                <a href="#schedule" class="btn btn-outline-neon">AULAS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in-section">Mais que uma academia, <span class="text-glow">uma comunidade.</span></h2>
+            <p class="section-subtitle fade-in-section">Escolha o treino que mais combina com você e seus objetivos.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card glass-panel fade-in-section">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Musculação</h3>
+                    <p>Equipamentos de ponta para hipertrofia e força. Área livre e guiada.</p>
+                </div>
+                <div class="feature-card glass-panel fade-in-section">
+                    <div class="feature-icon">🧬</div>
+                    <h3>Cardio & HIIT</h3>
+                    <p>Esteiras, bicicletas e aulas de alta intensidade para queimar calorias.</p>
+                </div>
+                <div class="feature-card glass-panel fade-in-section">
+                    <div class="feature-icon">🌐</div>
+                    <h3>DO SEU JEITO</h3>
+                    <p> Funcional • HIIT
+Boxe • Muay Thai • Jiu-Jitsu • MMA
+Pilates • Yoga • Spinning • Fit Dance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section (Dynamic) -->
+    <section id="schedule">
+        <div class="container">
+            <h2 class="section-title fade-in-section">HORÁRIOS DOS <span class="text-glow">TREINOS</span></h2>
+            
+            <div class="schedule-container glass-panel fade-in-section">
+                <div id="class-list" class="class-grid">
+                    <!-- Javascript injects here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans">
+        <div class="container">
+            <h2 class="section-title fade-in-section">NOSSOS <span class="text-glow">PLANOS</span></h2>
+
+            <div class="plans-grid">
+                <div class="plan-card glass-panel fade-in-section">
+                    <h3 class="plan-name">Índios Basic</h3>
+                    <div class="plan-price">R$ 50<span>/mês</span></div>
+                    <ul class="plan-features">
+                        <li>Músculação</li>
+                        <li>Cardio & HIIT</li>
+                    </ul>
+                    <button class="btn btn-outline-neon">SELECIONAR</button>
+                </div>
+
+                <div class="plan-card glass-panel highlight-neon fade-in-section">
+                    <div class="badge-holo">MAIS RECOMENDADO</div>
+                    <h3 class="plan-name text-neon">Indios Prime</h3>
+                    <div class="plan-price">R$ 100<span>/mês</span></div>
+                    <ul class="plan-features">
+                        <li>Músculação</li>
+                        <li>Cardio & HIIT</li>
+                        <li>1 Atividade Extra</li>
+                    </ul>
+                    <button class="btn btn-neon">ATIVAR AGORA</button>
+                </div>
+
+                <div class="plan-card glass-panel fade-in-section">
+                    <h3 class="plan-name">Índios Black</h3>
+                    <div class="plan-price">R$ 150<span>/mês</span></div>
+                    <ul class="plan-features">
+                        <li>Músculação</li>
+                        <li>Cardio & HIIT</li>
+                        <li>Acesso Total as atividades extras</li>
+                    </ul>
+                    <button class="btn btn-outline-neon">SELECIONAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">INDIOS <span class="text-glow">ACADEMIA</span></div>
+            <div class="socials">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">FACEBOOK</a>
+                <a href="#">WHATSAPP</a>
+            </div>
+            <p class="copyright">&copy; 2024 Indios Academy Systems. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ADMIN MODAL (Glassmorphism) -->
+    <div id="adminModal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <button class="close-modal" onclick="closeAdminModal()">&times;</button>
+            
+            <div id="loginView" class="login-view">
+                <h3 style="margin-bottom: 20px; color: var(--neon-green); font-family: 'Orbitron';">ACESSO ROOT</h3>
+                <div id="loginAlert" class="alert alert-cyber">Acesso Negado. Credenciais Inválidas.</div>
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label>USER_ID</label>
+                        <input type="text" id="username" class="form-control cyber-input" placeholder="admin" required>
+                    </div>
+                    <div class="form-group">
+                        <label>PASS_KEY</label>
+                        <input type="password" id="password" class="form-control cyber-input" placeholder="admin" required>
+                    </div>
+                    <button type="submit" class="btn btn-neon" style="width: 100%;">AUTENTICAR</button>
+                </form>
+            </div>
+
+            <div id="dashboardView" class="admin-view">
+                <div class="admin-header">
+                    <h3 style="color: var(--neon-green); font-family: 'Orbitron';">PAINEL DE CONTROLE</h3>
+                    <button onclick="logout()" class="btn-text-only">LOGOUT</button>
+                </div>
+                
+                <form onsubmit="addClass(event)">
+                    <div class="form-group">
+                        <label>Nome do Protocolo</label>
+                        <input type="text" id="className" class="form-control cyber-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ciclo (Dia)</label>
+                        <select id="classDay" class="form-control cyber-input" required>
+                            <option value="Segunda">Segunda</option>
+                            <option value="Terça">Terça</option>
+                            <option value="Quarta">Quarta</option>
+                            <option value="Quinta">Quinta</option>
+                            <option value="Sexta">Sexta</option>
+                            <option value="Sábado">Sábado</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Timestamp (Hora)</label>
+                        <input type="time" id="classTime" class="form-control cyber-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Instrutor</label>
+                        <input type="text" id="classInstructor" class="form-control cyber-input" required>
+                    </div>
+                    <button type="submit" class="btn btn-neon" style="width: 100%;">CARREGAR DADOS</button>
+                </form>
+
+                <div style="margin-top: 30px; border-top: 1px solid var(--neon-green); padding-top: 15px;">
+                    <h4 style="margin-bottom: 10px; font-size: 0.9rem; font-family: 'Orbitron';">DATABASE</h4>
+                    <ul id="adminClassList" class="cyber-list">
+                        <!-- List items -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Dados atualizados com sucesso.</div>
+    <script src="script.js"></script>
+</body>
+</html>
