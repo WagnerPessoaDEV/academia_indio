@@ -1,13 +1,3 @@
-// --- DATA & STATE ---
-let classes = [
-    { id: 1, name: "Funcional", day: "Segunda - FEIRA", instructor: "Neo" },
-    { id: 2, name: "Hiit Boxe", day: "Terça - Feira", time: "18:30", instructor: "Trinity" },
-    { id: 3, name: "Jiu-Jitsu", day: "Quarta - Feira", time: "19:00", instructor: "Morpheus" },
-    { id: 4, name: "MMA", day: "Quinta - Feira", time: "07:00", instructor: "Smith" },
-    { id: 5, name: "Combat Tech", day: "Sexta - Feira", time: "20:00", instructor: "Cypher" },
-    { id: 6, name: "Fit Dance", day: "Sábado", time: "12:00", instructor: "Tank" }
-];
-
 // --- DOM ELEMENTS ---
 const modal = document.getElementById('adminModal');
 const loginView = document.getElementById('loginView');
@@ -16,6 +6,9 @@ const loginAlert = document.getElementById('loginAlert');
 const publicClassList = document.getElementById('class-list');
 const adminClassList = document.getElementById('adminClassList');
 const toast = document.getElementById('toast');
+
+// --- DATA STORE ---
+let classes = []; // Inicializa a lista de aulas como vazia.
 
 // --- INITIALIZATION & ANIMATIONS ---
 document.addEventListener('DOMContentLoaded', () => {
