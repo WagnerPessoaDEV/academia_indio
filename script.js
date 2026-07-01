@@ -31,6 +31,12 @@ function initScrollAnimation() {
     });
 }
 
+// --- NOVO: Lógica do Menu Responsivo (Hambúrguer) ---
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
 // --- RENDER FUNCTIONS ---
 function renderPublicSchedule() {
     publicClassList.innerHTML = '';

@@ -139,6 +139,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Garante posicionamento correto do menu mobile */
 }
 
 .logo {
@@ -392,10 +393,40 @@ footer {
 
 /* --- RESPONSIVO --- */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .menu-toggle { display: block; }
+    /* Menu lateral/gaveta adaptado para dispositivos móveis */
+    .nav-links { 
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Posiciona diretamente sob o cabeçalho */
+        left: 0;
+        width: 100%;
+        background-color: rgba(5, 5, 5, 0.95);
+        border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+        padding: 20px;
+        gap: 25px;
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Ativado pela classe injetada via JavaScript */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle { 
+        display: block; 
+    }
+
     .main-title { font-size: 3rem; }
     .highlight-neon { transform: scale(1); }
     .cta-group { flex-direction: column; }
     .btn { width: 100%; }
+
+    /* Ajuste de centralização do botão administrativo no mobile */
+    .admin-link {
+        display: inline-block;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
