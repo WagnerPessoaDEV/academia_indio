@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIO|PLEX</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Importando Fontes Futuristas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="cyber-body">
 
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -31,10 +29,8 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
-        <!-- Particles Background Canvas (Optional simulated via CSS) -->
         <div class="grid-bg"></div>
         
         <div class="container hero-content fade-in-section">
@@ -47,8 +43,7 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="about">
+    <section id="about" style="padding: 60px 0;">
         <div class="container">
             <h2 class="section-title fade-in-section">SEU OBJETIVO, <span class="text-glow">NOSSA MISSÃO.</span></h2>
             <p class="section-subtitle fade-in-section">Escolha o treino que mais combina com você e seus objetivos.</p>
@@ -73,8 +68,7 @@
         </div>
     </section>
 
-    <!-- Schedule Section (Dynamic) -->
-    <section id="schedule">
+    <section id="schedule" style="padding: 60px 0;">
         <div class="container">
             <h2 class="section-title fade-in-section">HORÁRIOS DAS <span class="text-glow">AULAS COLETIVAS</span></h2>
             <div class="plans-grid">
@@ -90,7 +84,7 @@
                     <button class="btn btn-outline-neon">AGENDE A SUA AULA PELO APLICATIVO OU DIRETO NA RECEPÇÃO</button>
                 </div>
 
-              <div class="plan-card glass-panel fade-in-section">
+                <div class="plan-card glass-panel fade-in-section">
                     <h3 class="plan-name">TERÇA - FEIRA</h3>
                     <ul class="plan-features">
                         <li>06:10 - FUNCIONAL - MAYARA</li>                      
@@ -140,16 +134,8 @@
             </div>
         </div>
     </section>
-            <div class="schedule-container glass-panel fade-in-section">
-                <div id="class-list" class="class-grid">
-                    <!-- Javascript injects here -->
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Plans Section -->
-    <section id="plans">
+    <section id="plans" style="padding: 60px 0;">
         <div class="container">
             <h2 class="section-title fade-in-section">NOSSOS <span class="text-glow">PLANOS</span></h2>
 
@@ -189,7 +175,30 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="partnerships" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title fade-in-section">NOSSAS <span class="text-glow">PARCERIAS</span></h2>
+            <p class="section-subtitle fade-in-section">Marcas e empresas que evoluem junto com a gente.</p>
+            <div class="features-grid">
+                <div class="feature-card glass-panel fade-in-section">
+                    <p style="color: var(--text-muted);">Espaço reservado para parceiros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photos" style="padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title fade-in-section">GALERIA DE <span class="text-glow">FOTOS</span></h2>
+            <p class="section-subtitle fade-in-section">Conheça nossa estrutura de alta performance.</p>
+            <div class="features-grid">
+                <div class="feature-card glass-panel fade-in-section">
+                    <p style="color: var(--text-muted);">Espaço reservado para fotos da academia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-logo">BIO|PLEX <span class="text-glow"></span></div>
@@ -202,7 +211,6 @@
         </div>
     </footer>
 
-    <!-- ADMIN MODAL (Glassmorphism) -->
     <div id="adminModal" class="modal-overlay">
         <div class="modal-content glass-panel">
             <button class="close-modal" onclick="closeAdminModal()">&times;</button>
@@ -259,8 +267,7 @@
                 <div style="margin-top: 30px; border-top: 1px solid var(--neon-green); padding-top: 15px;">
                     <h4 style="margin-bottom: 10px; font-size: 0.9rem; font-family: 'Orbitron';">DATABASE</h4>
                     <ul id="adminClassList" class="cyber-list">
-                        <!-- List items -->
-                    </ul>
+                        </ul>
                 </div>
             </div>
         </div>
