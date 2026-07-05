@@ -30,6 +30,9 @@
     </header>
 
     <section id="home" class="hero">
+        <video autoplay muted loop playsinline id="heroVideo" class="hero-video">
+            <source id="heroVideoSource" src="src/assets/bioplexacademia_20260704_213426_273.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         <div class="grid-bg"></div>
         
@@ -71,66 +74,8 @@
     <section id="schedule" style="padding: 60px 0;">
         <div class="container">
             <h2 class="section-title fade-in-section">HORÁRIOS DAS <span class="text-glow">AULAS COLETIVAS</span></h2>
-            <div class="plans-grid">
-                <div class="plan-card glass-panel fade-in-section">
-                    <h3 class="plan-name">SEGUNDA - FEIRA</h3>
-                    <ul class="plan-features">
-                        <li>06:10 - FULL BODY - LYANDRA</li>                      
-                        <li>07:10 - FIT DANCE - YAGO</li>
-                        <li>18:10 - MOBILIDADE E GAP - ANNY</li>
-                        <li>19:10 - FUNCIONAL - EDUARDO</li>
-                        <li> 20:00 - FIT DANCE - YAGO</li>
-                    </ul>
-                    <button class="btn btn-outline-neon">AGENDE A SUA AULA PELO APLICATIVO OU DIRETO NA RECEPÇÃO</button>
-                </div>
-
-                <div class="plan-card glass-panel fade-in-section">
-                    <h3 class="plan-name">TERÇA - FEIRA</h3>
-                    <ul class="plan-features">
-                        <li>06:10 - FUNCIONAL - MAYARA</li>                      
-                        <li>07:10 - JUMP - POLYANA</li>
-                        <li>18:10 - STEP - POLYANA</li>
-                        <li>19:10 - JUMP - POLYANA</li>
-                        <li>20:00 - STEP - POLYANA</li>
-                    </ul>
-                    <button class="btn btn-outline-neon">AGENDE A SUA AULA PELO APLICATIVO OU DIRETO NA RECEPÇÃO</button>
-                </div>
-
-                <div class="plan-card glass-panel fade-in-section">
-                    <h3 class="plan-name">QUARTA - FEIRA</h3>
-                    <ul class="plan-features">
-                        <li>06:10 - FULL BODY - LYANDRA</li>                      
-                        <li>07:10 - FIT DANCE - YAGO</li>
-                        <li>18:10 - MOBILIDADE E GAP - ANNY</li>
-                        <li>19:10 - FUNCIONAL - EDUARDO</li>
-                        <li> 20:00 - FIT DANCE - YAGO</li>
-                    </ul>
-                    <button class="btn btn-outline-neon">AGENDE A SUA AULA PELO APLICATIVO OU DIRETO NA RECEPÇÃO</button>
-                </div>
-
-                <div class="plan-card glass-panel fade-in-section">
-                    <h3 class="plan-name">QUINTA - FEIRA</h3>
-                    <ul class="plan-features">
-                        <li>06:10 - FUNCIONAL - MAYARA</li>                      
-                        <li>07:10 - JUMP - POLYANA</li>
-                        <li>18:10 - STEP - POLYANA</li>
-                        <li>19:10 - JUMP - POLYANA</li>
-                        <li>20:00 - STEP - POLYANA</li>
-                    </ul>
-                    <button class="btn btn-outline-neon">AGENDE A SUA AULA PELO APLICATIVO OU DIRETO NA RECEPÇÃO</button>
-                </div>
-
-                <div class="plan-card glass-panel fade-in-section">
-                    <h3 class="plan-name">SEXTA - FEIRA</h3>
-                    <ul class="plan-features">
-                        <li>06:10 - FULL BODY - LYANDRA</li>                      
-                        <li>07:10 - FIT DANCE - YAGO</li>
-                        <li>18:10 - MOBILIDADE E GAP - ANNY</li>
-                        <li>19:10 - FUNCIONAL - EDUARDO</li>
-                        <li> 20:00 - FIT DANCE - YAGO</li>
-                    </ul>
-                    <button class="btn btn-outline-neon">AGENDE A SUA AULA PELO APLICATIVO OU DIRETO NA RECEPÇÃO</button>
-                </div>
+            <div id="scheduleGrid" class="plans-grid">
+                <!-- Gerado dinamicamente via script.js a partir dos dados salvos -->
             </div>
         </div>
     </section>
@@ -197,17 +142,27 @@
         <div class="photo-slider fade-in-section">
             <div class="photo-slide-track">
                 <!-- As imagens são duplicadas para criar o efeito de loop infinito -->
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym1/400/300" alt="Foto da academia 1"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym2/400/300" alt="Foto da academia 2"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym3/400/300" alt="Foto da academia 3"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym4/400/300" alt="Foto da academia 4"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym5/400/300" alt="Foto da academia 5"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213359_598.jpg" alt="Foto da academia 1"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213402_556.jpg" alt="Foto da academia 2"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213422_373.jpg" alt="Foto da academia 3"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213429_872.jpg" alt="Foto da academia 4"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213437_367.jpg" alt="Foto da academia 5"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213442_141.jpg" alt="Foto da academia 6"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213444_855.jpg" alt="Foto da academia 7"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213449_067.jpg" alt="Foto da academia 8"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213459_912.jpg" alt="Foto da academia 9"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213507_485.jpg" alt="Foto da academia 10"></div>
                 <!-- Repetição das imagens -->
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym1/400/300" alt="Foto da academia 1"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym2/400/300" alt="Foto da academia 2"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym3/400/300" alt="Foto da academia 3"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym4/400/300" alt="Foto da academia 4"></div>
-                <div class="photo-slide"><img src="https://picsum.photos/seed/gym5/400/300" alt="Foto da academia 5"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213359_598.jpg" alt="Foto da academia 1"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213402_556.jpg" alt="Foto da academia 2"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213422_373.jpg" alt="Foto da academia 3"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213429_872.jpg" alt="Foto da academia 4"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213437_367.jpg" alt="Foto da academia 5"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213442_141.jpg" alt="Foto da academia 6"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213444_855.jpg" alt="Foto da academia 7"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213449_067.jpg" alt="Foto da academia 8"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213459_912.jpg" alt="Foto da academia 9"></div>
+                <div class="photo-slide"><img src="src/assets/bioplexacademia_20260704_213507_485.jpg" alt="Foto da academia 10"></div>
             </div>
         </div>
     </section>
@@ -274,13 +229,28 @@
                         <label>Instrutor</label>
                         <input type="text" id="classInstructor" class="form-control cyber-input" required>
                     </div>
-                    <button type="submit" class="btn btn-neon" style="width: 100%;">CARREGAR DADOS</button>
+                    <input type="hidden" id="editingClassId" value="">
+                    <button type="submit" id="classFormSubmit" class="btn btn-neon" style="width: 100%;">CARREGAR DADOS</button>
+                    <button type="button" id="cancelEditBtn" class="btn-text-only" style="display:none; margin-top: 8px;" onclick="cancelEditClass()">CANCELAR EDIÇÃO</button>
                 </form>
 
-                <div style="margin-top: 30px; border-top: 1px solid var(--neon-green); padding-top: 15px;">
+                <div style="margin-top: 25px; border-top: 1px solid var(--neon-green); padding-top: 15px;">
+                    <h4 style="margin-bottom: 15px; font-size: 0.9rem; font-family: 'Orbitron'; color: var(--neon-green);">VÍDEO DE FUNDO (HERO)</h4>
+                    <div class="form-group">
+                        <label>SELECIONE O VÍDEO</label>
+                        <select id="bgVideoSelect" class="form-control cyber-input" onchange="changeBackgroundVideo(this.value)">
+                            <option value="src/assets/bioplexacademia_20260704_213426_273.mp4">Vídeo 1 (Corrida/Cardio)</option>
+                            <option value="src/assets/bioplexacademia_20260704_213434_559.mp4">Vídeo 2 (Musculação/Treino)</option>
+                            <option value="src/assets/bioplexacademia_20260704_213523_969.mp4">Vídeo 3 (Academia Geral)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="margin-top: 25px; border-top: 1px solid var(--neon-green); padding-top: 15px;">
                     <h4 style="margin-bottom: 10px; font-size: 0.9rem; font-family: 'Orbitron';">DATABASE</h4>
                     <ul id="adminClassList" class="cyber-list">
                         </ul>
+                    <p style="font-size: 0.7rem; color: #666; margin-top: 8px;">Clique em uma aula para editar.</p>
                 </div>
             </div>
         </div>

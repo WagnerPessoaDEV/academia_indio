@@ -179,13 +179,28 @@ nav {
     background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
 }
 
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.25;
+}
+
 /* Simulação de luz ambiente */
 .hero::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('https://picsum.photos/seed/cyberpunkgym/1920/1080.jpg') center/cover;
+    background: url('src/assets/bioplexacademia_20260704_213422_373.jpg') center/cover;
     opacity: 0.15;
     z-index: 1;
     mix-blend-mode: overlay;
@@ -378,7 +393,7 @@ footer {
 /* --- PHOTO SLIDER --- */
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 5)); } /* 250px é a largura do slide, 5 é o número de slides originais */
+    100% { transform: translateX(calc(-250px * 10)); } /* 250px é a largura do slide, 10 é o número de slides originais */
 }
 
 .photo-slider {
@@ -402,9 +417,9 @@ footer {
 .photo-slider::after { right: 0; background: linear-gradient(to right, rgba(5, 5, 5, 0), var(--dark-bg)); }
 
 .photo-slide-track {
-    animation: scroll 25s linear infinite;
+    animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 10); /* 250px de largura * 10 slides (5 originais + 5 duplicados) */
+    width: calc(250px * 20); /* 250px de largura * 20 slides (10 originais + 10 duplicados) */
 }
 
 .photo-slide {
