@@ -375,6 +375,53 @@ footer {
 .cyber-list li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); cursor: pointer; }
 .cyber-list li:hover { color: var(--neon-green); }
 
+/* --- PHOTO SLIDER --- */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); } /* 250px é a largura do slide, 5 é o número de slides originais */
+}
+
+.photo-slider {
+    background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgba(5, 5, 5, 0) 10%, rgba(5, 5, 5, 0) 90%, rgba(5, 5, 5, 1) 100%);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.photo-slider::before, .photo-slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+}
+
+.photo-slider::before { left: 0; background: linear-gradient(to left, rgba(5, 5, 5, 0), var(--dark-bg)); }
+.photo-slider::after { right: 0; background: linear-gradient(to right, rgba(5, 5, 5, 0), var(--dark-bg)); }
+
+.photo-slide-track {
+    animation: scroll 25s linear infinite;
+    display: flex;
+    width: calc(250px * 10); /* 250px de largura * 10 slides (5 originais + 5 duplicados) */
+}
+
+.photo-slide {
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+}
+
+.photo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--glass-border);
+    transition: 0.3s;
+}
+
 /* --- TOAST --- */
 .toast {
     position: fixed;
