@@ -423,18 +423,15 @@ footer {
 }
 
 .photo-slide {
-    height: 200px;
+    height: 313px;
     width: 250px;
-    padding: 10px;
 }
 
 .photo-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid var(--glass-border);
-    transition: 0.3s;
+    object-position: center top;
 }
 
 /* --- TOAST --- */
